@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<app kk-view="view/main" libs="libs">
+    <app storyboard="App" identifier="nav">
+        <home title="首页" lua-main="page/home.lua"></home>
+    </app>
+</app>

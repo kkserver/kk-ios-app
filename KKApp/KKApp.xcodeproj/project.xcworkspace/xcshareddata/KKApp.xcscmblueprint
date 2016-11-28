@@ -1,0 +1,65 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0F87581A1B951BF7EC74EADFCBAC0347FB543ADE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E8748FE274D1AEFFF9D53E25990248EE819F4D6E" : 9223372036854775807,
+    "96E342C3EA94C9CEEEA999E008F69B95712CB664" : 9223372036854775807,
+    "3E2B9ABBA3EF135D5B3703F9BE1B3971659DC813" : 9223372036854775807,
+    "0F87581A1B951BF7EC74EADFCBAC0347FB543ADE" : 9223372036854775807,
+    "1086C6E3FB17D79F1F2E7A33AA68FB29E7613BAE" : 9223372036854775807,
+    "278724029B2EF99FD225FB7C426DD9774E5E0958" : 9223372036854775807,
+    "5FC579FAFFBBB428ECB77BD5EC0D24F2932857FA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CF6C250-BD7B-40E6-BF9B-3B0AF6E85F53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E8748FE274D1AEFFF9D53E25990248EE819F4D6E" : "kk-ios-obs-lua\/",
+    "96E342C3EA94C9CEEEA999E008F69B95712CB664" : "kk-ios-view\/",
+    "3E2B9ABBA3EF135D5B3703F9BE1B3971659DC813" : "kk-ios-observer\/",
+    "0F87581A1B951BF7EC74EADFCBAC0347FB543ADE" : "kk-ios-app\/",
+    "1086C6E3FB17D79F1F2E7A33AA68FB29E7613BAE" : "kk-ios-lua\/",
+    "278724029B2EF99FD225FB7C426DD9774E5E0958" : "kk-ios-view-lua\/",
+    "5FC579FAFFBBB428ECB77BD5EC0D24F2932857FA" : "kk-ios-lua-http\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KKApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KKApp\/KKApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0F87581A1B951BF7EC74EADFCBAC0347FB543ADE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-lua.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1086C6E3FB17D79F1F2E7A33AA68FB29E7613BAE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-view-lua.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "278724029B2EF99FD225FB7C426DD9774E5E0958"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-observer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E2B9ABBA3EF135D5B3703F9BE1B3971659DC813"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-lua-http.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FC579FAFFBBB428ECB77BD5EC0D24F2932857FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-view.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96E342C3EA94C9CEEEA999E008F69B95712CB664"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kkserver\/kk-ios-obs-lua.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E8748FE274D1AEFFF9D53E25990248EE819F4D6E"
+    }
+  ]
+}
