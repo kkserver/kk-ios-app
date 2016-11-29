@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69E2991DED537000A795D4 /* KKCrypto.framework */; };
+		AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69E29B1DED537200A795D4 /* KKHttp.framework */; };
+		AC69E2AC1DED6A8900A795D4 /* KKAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */; };
 		ACCDE4B91DE9CF3400E6C255 /* KKApp.h in Headers */ = {isa = PBXBuildFile; fileRef = ACCDE4B71DE9CF3400E6C255 /* KKApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACCDE4E91DE9D13C00E6C255 /* KKApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE4E81DE9D13C00E6C255 /* KKApplication.swift */; };
 		ACCDE5131DE9EAF500E6C255 /* KKApplication_Lua.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE5121DE9EAF500E6C255 /* KKApplication_Lua.swift */; };
@@ -44,13 +47,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = ACCDE4601DE9961900E6C255;
 			remoteInfo = KKLuaHttp;
-		};
-		ACCDE4CD1DE9CF6300E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCDE48B1DE9C72200E6C255;
-			remoteInfo = Demo;
 		};
 		ACCDE4D61DE9CF6E00E6C255 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -174,6 +170,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC69E2991DED537000A795D4 /* KKCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKCrypto.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/KKApp-dgwxevqcjkwygnggqrrpexhofnrx/Build/Products/Debug-iphonesimulator/KKCrypto.framework"; sourceTree = "<group>"; };
+		AC69E29B1DED537200A795D4 /* KKHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKHttp.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/KKApp-dgwxevqcjkwygnggqrrpexhofnrx/Build/Products/Debug-iphonesimulator/KKHttp.framework"; sourceTree = "<group>"; };
+		AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKAppViewController.swift; sourceTree = "<group>"; };
 		ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCDE4B71DE9CF3400E6C255 /* KKApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKApp.h; sourceTree = "<group>"; };
 		ACCDE4B81DE9CF3400E6C255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -212,6 +211,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */,
+				AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */,
 				ACCDE5481DEAE04600E6C255 /* KKLua.framework in Frameworks */,
 				ACCDE5491DEAE04600E6C255 /* KKLuaHttp.framework in Frameworks */,
 				ACCDE54A1DEAE04600E6C255 /* KKObserverLua.framework in Frameworks */,
@@ -225,6 +226,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC69E2981DED536F00A795D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC69E29B1DED537200A795D4 /* KKHttp.framework */,
+				AC69E2991DED537000A795D4 /* KKCrypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACCDE4AA1DE9CF3400E6C255 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +247,7 @@
 				ACCDE4B61DE9CF3400E6C255 /* KKApp */,
 				ACCDE5211DEAD84F00E6C255 /* KKApplication */,
 				ACCDE4B51DE9CF3400E6C255 /* Products */,
+				AC69E2981DED536F00A795D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +270,7 @@
 				ACCDE5141DE9EE1F00E6C255 /* KKApplication_ViewController.swift */,
 				ACCDE5511DEAF36600E6C255 /* KKApplication_Window.swift */,
 				ACCDE51A1DEA6FD800E6C255 /* KKViewController.swift */,
+				AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */,
 			);
 			path = KKApp;
 			sourceTree = "<group>";
@@ -275,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				ACCDE4CC1DE9CF6300E6C255 /* KKLuaHttp.framework */,
-				ACCDE4CE1DE9CF6300E6C255 /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -473,13 +484,6 @@
 			remoteRef = ACCDE4CB1DE9CF6300E6C255 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		ACCDE4CE1DE9CF6300E6C255 /* Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Demo.app;
-			remoteRef = ACCDE4CD1DE9CF6300E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		ACCDE4D71DE9CF6E00E6C255 /* KKViewLua.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -541,6 +545,7 @@
 			files = (
 				ACCDE5151DE9EE1F00E6C255 /* KKApplication_ViewController.swift in Sources */,
 				ACCDE4E91DE9D13C00E6C255 /* KKApplication.swift in Sources */,
+				AC69E2AC1DED6A8900A795D4 /* KKAppViewController.swift in Sources */,
 				ACCDE51B1DEA6FD800E6C255 /* KKViewController.swift in Sources */,
 				ACCDE5521DEAF36600E6C255 /* KKApplication_Window.swift in Sources */,
 				ACCDE5131DE9EAF500E6C255 /* KKApplication_Lua.swift in Sources */,
@@ -828,6 +833,7 @@
 				ACCDE4BE1DE9CF3400E6C255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACCDE52F1DEAD84F00E6C255 /* Build configuration list for PBXNativeTarget "KKApplication" */ = {
 			isa = XCConfigurationList;
@@ -836,6 +842,7 @@
 				ACCDE5311DEAD84F00E6C255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

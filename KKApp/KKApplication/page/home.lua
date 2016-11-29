@@ -5,8 +5,8 @@ return function(app,obs)
 	
 	http:send({
 		method="GET",
-		url="http://www.baidu.com/img/baidu_jgylogo3.gif",
-		type="url",
+		url="http://kkmofang.cn/job/?id=1",
+		type="text",
 		onload = function(data)
 			log(data)
 		end,
