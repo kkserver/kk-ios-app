@@ -111,6 +111,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
         if _lastChild != nil {
             _lastChild!._nextSibling = e
             e._prevSibling = _lastChild
+            _lastChild = e
         } else {
             _firstChild = e
             _lastChild = e
