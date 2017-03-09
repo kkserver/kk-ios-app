@@ -31,6 +31,16 @@
 		ACEB48F81E7116C30029CF9A /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; };
 		ACEB48F91E7116C30029CF9A /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; };
 		ACEB48FA1E7116C30029CF9A /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; };
+		ACEB49171E71273C0029CF9A /* KKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */; };
+		ACEB49181E71273C0029CF9A /* KKHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F01E7116C30029CF9A /* KKHttp.framework */; };
+		ACEB49191E71273C0029CF9A /* KKLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F11E7116C30029CF9A /* KKLua.framework */; };
+		ACEB491A1E71273C0029CF9A /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; };
+		ACEB491B1E71273C0029CF9A /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; };
+		ACEB491C1E71273C0029CF9A /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; };
+		ACEB491E1E7127D10029CF9A /* KKViewLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491D1E7127D10029CF9A /* KKViewLua.framework */; };
+		ACEB49201E7127D40029CF9A /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491F1E7127D40029CF9A /* KKView.framework */; };
+		ACEB49211E7127DD0029CF9A /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491F1E7127D40029CF9A /* KKView.framework */; };
+		ACEB49221E7127E40029CF9A /* KKViewLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491D1E7127D10029CF9A /* KKViewLua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,8 @@
 		ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLuaHttp.framework; path = ../../../../../../Library/Frameworks/KKLuaHttp.framework; sourceTree = "<group>"; };
 		ACEB48F31E7116C30029CF9A /* KKObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserver.framework; path = ../../../../../../Library/Frameworks/KKObserver.framework; sourceTree = "<group>"; };
 		ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserverLua.framework; path = ../../../../../../Library/Frameworks/KKObserverLua.framework; sourceTree = "<group>"; };
+		ACEB491D1E7127D10029CF9A /* KKViewLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKViewLua.framework; path = ../../../../../../Library/Frameworks/KKViewLua.framework; sourceTree = "<group>"; };
+		ACEB491F1E7127D40029CF9A /* KKView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKView.framework; path = ../../../../../../Library/Frameworks/KKView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,8 @@
 				ACEB48F81E7116C30029CF9A /* KKLuaHttp.framework in Frameworks */,
 				ACEB48F91E7116C30029CF9A /* KKObserver.framework in Frameworks */,
 				ACEB48FA1E7116C30029CF9A /* KKObserverLua.framework in Frameworks */,
+				ACEB491E1E7127D10029CF9A /* KKViewLua.framework in Frameworks */,
+				ACEB49201E7127D40029CF9A /* KKView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +107,14 @@
 			files = (
 				AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */,
 				AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */,
+				ACEB49171E71273C0029CF9A /* KKCrypto.framework in Frameworks */,
+				ACEB49181E71273C0029CF9A /* KKHttp.framework in Frameworks */,
+				ACEB49191E71273C0029CF9A /* KKLua.framework in Frameworks */,
+				ACEB491A1E71273C0029CF9A /* KKLuaHttp.framework in Frameworks */,
+				ACEB491B1E71273C0029CF9A /* KKObserver.framework in Frameworks */,
+				ACEB49221E7127E40029CF9A /* KKViewLua.framework in Frameworks */,
+				ACEB491C1E71273C0029CF9A /* KKObserverLua.framework in Frameworks */,
+				ACEB49211E7127DD0029CF9A /* KKView.framework in Frameworks */,
 				ACCDE5341DEAD85A00E6C255 /* KKApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +125,8 @@
 		AC69E2981DED536F00A795D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB491F1E7127D40029CF9A /* KKView.framework */,
+				ACEB491D1E7127D10029CF9A /* KKViewLua.framework */,
 				ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */,
 				ACEB48F01E7116C30029CF9A /* KKHttp.framework */,
 				ACEB48F11E7116C30029CF9A /* KKLua.framework */,
@@ -482,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = KKApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +525,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = KKApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

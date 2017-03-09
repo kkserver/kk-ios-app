@@ -43,7 +43,7 @@ extension KKApplication : KKScriptContext {
         if v == nil {
             
             if type == "lua" {
-                v = KKLuaScriptRunnable.init(luaState: luaState)
+                v = KKLuaScriptRunnable.init(state: luaState)
                 set(["script",type],v)
             }
             

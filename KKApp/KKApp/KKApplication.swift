@@ -316,7 +316,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
     
         e!.set(["app","name"],elementName)
         
-        print("[KK]",e!.value)
+        print("[KK]",e!.value ?? "")
         
         _element = e
     }
