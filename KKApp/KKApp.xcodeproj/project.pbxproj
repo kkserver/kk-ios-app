@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69E2991DED537000A795D4 /* KKCrypto.framework */; };
-		AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC69E29B1DED537200A795D4 /* KKHttp.framework */; };
 		AC69E2AC1DED6A8900A795D4 /* KKAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */; };
 		ACCDE4B91DE9CF3400E6C255 /* KKApp.h in Headers */ = {isa = PBXBuildFile; fileRef = ACCDE4B71DE9CF3400E6C255 /* KKApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACCDE4E91DE9D13C00E6C255 /* KKApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE4E81DE9D13C00E6C255 /* KKApplication.swift */; };
@@ -18,7 +16,6 @@
 		ACCDE5231DEAD84F00E6C255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE5221DEAD84F00E6C255 /* AppDelegate.swift */; };
 		ACCDE52A1DEAD84F00E6C255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5291DEAD84F00E6C255 /* Assets.xcassets */; };
 		ACCDE52D1DEAD84F00E6C255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE52B1DEAD84F00E6C255 /* LaunchScreen.storyboard */; };
-		ACCDE5341DEAD85A00E6C255 /* KKApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */; };
 		ACCDE5381DEADA2D00E6C255 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5371DEADA2D00E6C255 /* App.storyboard */; };
 		ACCDE5521DEAF36600E6C255 /* KKApplication_Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE5511DEAF36600E6C255 /* KKApplication_Window.swift */; };
 		ACCDE5561DEB11F900E6C255 /* app.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5531DEB11F900E6C255 /* app.xml */; };
@@ -31,16 +28,18 @@
 		ACEB48F81E7116C30029CF9A /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; };
 		ACEB48F91E7116C30029CF9A /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; };
 		ACEB48FA1E7116C30029CF9A /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; };
-		ACEB49171E71273C0029CF9A /* KKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */; };
-		ACEB49181E71273C0029CF9A /* KKHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F01E7116C30029CF9A /* KKHttp.framework */; };
-		ACEB49191E71273C0029CF9A /* KKLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F11E7116C30029CF9A /* KKLua.framework */; };
-		ACEB491A1E71273C0029CF9A /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; };
-		ACEB491B1E71273C0029CF9A /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; };
-		ACEB491C1E71273C0029CF9A /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; };
 		ACEB491E1E7127D10029CF9A /* KKViewLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491D1E7127D10029CF9A /* KKViewLua.framework */; };
 		ACEB49201E7127D40029CF9A /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491F1E7127D40029CF9A /* KKView.framework */; };
-		ACEB49211E7127DD0029CF9A /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491F1E7127D40029CF9A /* KKView.framework */; };
-		ACEB49221E7127E40029CF9A /* KKViewLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491D1E7127D10029CF9A /* KKViewLua.framework */; };
+		ACEB492D1E7132C20029CF9A /* KKApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49301E7132CF0029CF9A /* KKView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491F1E7127D40029CF9A /* KKView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49321E7132CF0029CF9A /* KKViewLua.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB491D1E7127D10029CF9A /* KKViewLua.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49341E7132CF0029CF9A /* KKCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49361E7132CF0029CF9A /* KKHttp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F01E7116C30029CF9A /* KKHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49381E7132CF0029CF9A /* KKLua.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F11E7116C30029CF9A /* KKLua.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB493A1E7132CF0029CF9A /* KKLuaHttp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB493C1E7132CF0029CF9A /* KKObserver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB493E1E7132CF0029CF9A /* KKObserverLua.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEB49451E7133080029CF9A /* KKZip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB49431E7133080029CF9A /* KKZip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +52,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ACEB492E1E7132C20029CF9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACEB492D1E7132C20029CF9A /* KKApp.framework in Embed Frameworks */,
+				ACEB49341E7132CF0029CF9A /* KKCrypto.framework in Embed Frameworks */,
+				ACEB493A1E7132CF0029CF9A /* KKLuaHttp.framework in Embed Frameworks */,
+				ACEB49321E7132CF0029CF9A /* KKViewLua.framework in Embed Frameworks */,
+				ACEB49451E7133080029CF9A /* KKZip.framework in Embed Frameworks */,
+				ACEB49381E7132CF0029CF9A /* KKLua.framework in Embed Frameworks */,
+				ACEB49361E7132CF0029CF9A /* KKHttp.framework in Embed Frameworks */,
+				ACEB493E1E7132CF0029CF9A /* KKObserverLua.framework in Embed Frameworks */,
+				ACEB493C1E7132CF0029CF9A /* KKObserver.framework in Embed Frameworks */,
+				ACEB49301E7132CF0029CF9A /* KKView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		AC69E2991DED537000A795D4 /* KKCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKCrypto.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/KKApp-dgwxevqcjkwygnggqrrpexhofnrx/Build/Products/Debug-iphonesimulator/KKCrypto.framework"; sourceTree = "<group>"; };
-		AC69E29B1DED537200A795D4 /* KKHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKHttp.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/KKApp-dgwxevqcjkwygnggqrrpexhofnrx/Build/Products/Debug-iphonesimulator/KKHttp.framework"; sourceTree = "<group>"; };
 		AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKAppViewController.swift; sourceTree = "<group>"; };
 		ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCDE4B71DE9CF3400E6C255 /* KKApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKApp.h; sourceTree = "<group>"; };
@@ -75,14 +95,15 @@
 		ACCDE5591DEB120900E6C255 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
 		ACCDE55A1DEB120900E6C255 /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
 		ACCDE55D1DEB122D00E6C255 /* page */ = {isa = PBXFileReference; lastKnownFileType = folder; path = page; sourceTree = "<group>"; };
-		ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKCrypto.framework; path = ../../../../../../Library/Frameworks/KKCrypto.framework; sourceTree = "<group>"; };
-		ACEB48F01E7116C30029CF9A /* KKHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKHttp.framework; path = ../../../../../../Library/Frameworks/KKHttp.framework; sourceTree = "<group>"; };
-		ACEB48F11E7116C30029CF9A /* KKLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLua.framework; path = ../../../../../../Library/Frameworks/KKLua.framework; sourceTree = "<group>"; };
-		ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLuaHttp.framework; path = ../../../../../../Library/Frameworks/KKLuaHttp.framework; sourceTree = "<group>"; };
-		ACEB48F31E7116C30029CF9A /* KKObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserver.framework; path = ../../../../../../Library/Frameworks/KKObserver.framework; sourceTree = "<group>"; };
-		ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserverLua.framework; path = ../../../../../../Library/Frameworks/KKObserverLua.framework; sourceTree = "<group>"; };
-		ACEB491D1E7127D10029CF9A /* KKViewLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKViewLua.framework; path = ../../../../../../Library/Frameworks/KKViewLua.framework; sourceTree = "<group>"; };
-		ACEB491F1E7127D40029CF9A /* KKView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKView.framework; path = ../../../../../../Library/Frameworks/KKView.framework; sourceTree = "<group>"; };
+		ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKCrypto.framework; path = ../../../../../../../Frameworks/KKCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB48F01E7116C30029CF9A /* KKHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKHttp.framework; path = ../../../../../../../Frameworks/KKHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB48F11E7116C30029CF9A /* KKLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLua.framework; path = ../../../../../../../Frameworks/KKLua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLuaHttp.framework; path = ../../../../../../../Frameworks/KKLuaHttp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB48F31E7116C30029CF9A /* KKObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserver.framework; path = ../../../../../../../Frameworks/KKObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserverLua.framework; path = ../../../../../../../Frameworks/KKObserverLua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB491D1E7127D10029CF9A /* KKViewLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKViewLua.framework; path = ../../../../../../../Frameworks/KKViewLua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB491F1E7127D40029CF9A /* KKView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKView.framework; path = ../../../../../../../Frameworks/KKView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACEB49431E7133080029CF9A /* KKZip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKZip.framework; path = ../../../../../../../Frameworks/KKZip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,17 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */,
-				AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */,
-				ACEB49171E71273C0029CF9A /* KKCrypto.framework in Frameworks */,
-				ACEB49181E71273C0029CF9A /* KKHttp.framework in Frameworks */,
-				ACEB49191E71273C0029CF9A /* KKLua.framework in Frameworks */,
-				ACEB491A1E71273C0029CF9A /* KKLuaHttp.framework in Frameworks */,
-				ACEB491B1E71273C0029CF9A /* KKObserver.framework in Frameworks */,
-				ACEB49221E7127E40029CF9A /* KKViewLua.framework in Frameworks */,
-				ACEB491C1E71273C0029CF9A /* KKObserverLua.framework in Frameworks */,
-				ACEB49211E7127DD0029CF9A /* KKView.framework in Frameworks */,
-				ACCDE5341DEAD85A00E6C255 /* KKApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +135,7 @@
 		AC69E2981DED536F00A795D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB49431E7133080029CF9A /* KKZip.framework */,
 				ACEB491F1E7127D40029CF9A /* KKView.framework */,
 				ACEB491D1E7127D10029CF9A /* KKViewLua.framework */,
 				ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */,
@@ -133,8 +144,6 @@
 				ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */,
 				ACEB48F31E7116C30029CF9A /* KKObserver.framework */,
 				ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */,
-				AC69E29B1DED537200A795D4 /* KKHttp.framework */,
-				AC69E2991DED537000A795D4 /* KKCrypto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				ACCDE51C1DEAD84F00E6C255 /* Sources */,
 				ACCDE51D1DEAD84F00E6C255 /* Frameworks */,
 				ACCDE51E1DEAD84F00E6C255 /* Resources */,
+				ACEB492E1E7132C20029CF9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -504,6 +514,7 @@
 		ACCDE5301DEAD84F00E6C255 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -523,6 +534,7 @@
 		ACCDE5311DEAD84F00E6C255 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				FRAMEWORK_SEARCH_PATHS = (

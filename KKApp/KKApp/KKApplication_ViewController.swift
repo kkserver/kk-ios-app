@@ -57,6 +57,23 @@ extension UIViewController {
             
         }, self)
         
+        observer.on(["app","bar-title"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
+            
+            if(weakObject != nil) {
+                (weakObject as! UIViewController?)!.tabBarItem.title = observer.stringValue(["app","bar-title"],nil)
+            }
+            
+        }, self)
+        
+        observer.on(["app","bar-image"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
+            
+            if(weakObject != nil) {
+                (weakObject as! UIViewController?)!.tabBarItem.image = UIImage.init(named: observer.stringValue(["app","bar-image"],"")!);
+            }
+            
+        }, self)
+
+        
     }
     
     public func obtainApplication(_ app:KKApplication) {
