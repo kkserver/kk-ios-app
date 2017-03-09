@@ -20,152 +20,26 @@
 		ACCDE52D1DEAD84F00E6C255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE52B1DEAD84F00E6C255 /* LaunchScreen.storyboard */; };
 		ACCDE5341DEAD85A00E6C255 /* KKApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */; };
 		ACCDE5381DEADA2D00E6C255 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5371DEADA2D00E6C255 /* App.storyboard */; };
-		ACCDE53D1DEAE01000E6C255 /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4EF1DE9D17F00E6C255 /* KKObserver.framework */; };
-		ACCDE5481DEAE04600E6C255 /* KKLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4C41DE9CF5B00E6C255 /* KKLua.framework */; };
-		ACCDE5491DEAE04600E6C255 /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4CC1DE9CF6300E6C255 /* KKLuaHttp.framework */; };
-		ACCDE54A1DEAE04600E6C255 /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4DF1DE9CF9300E6C255 /* KKObserverLua.framework */; };
-		ACCDE54B1DEAE04700E6C255 /* KKView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4F71DE9D1F900E6C255 /* KKView.framework */; };
-		ACCDE54C1DEAE04700E6C255 /* KKViewLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCDE4D71DE9CF6E00E6C255 /* KKViewLua.framework */; };
 		ACCDE5521DEAF36600E6C255 /* KKApplication_Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE5511DEAF36600E6C255 /* KKApplication_Window.swift */; };
 		ACCDE5561DEB11F900E6C255 /* app.xml in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5531DEB11F900E6C255 /* app.xml */; };
 		ACCDE55B1DEB120900E6C255 /* libs in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE5591DEB120900E6C255 /* libs */; };
 		ACCDE55C1DEB120900E6C255 /* view in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE55A1DEB120900E6C255 /* view */; };
 		ACCDE55E1DEB122D00E6C255 /* page in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE55D1DEB122D00E6C255 /* page */; };
+		ACEB48F51E7116C30029CF9A /* KKCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */; };
+		ACEB48F61E7116C30029CF9A /* KKHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F01E7116C30029CF9A /* KKHttp.framework */; };
+		ACEB48F71E7116C30029CF9A /* KKLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F11E7116C30029CF9A /* KKLua.framework */; };
+		ACEB48F81E7116C30029CF9A /* KKLuaHttp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */; };
+		ACEB48F91E7116C30029CF9A /* KKObserver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F31E7116C30029CF9A /* KKObserver.framework */; };
+		ACEB48FA1E7116C30029CF9A /* KKObserverLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ACCDE4C31DE9CF5B00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCDE3361DE93E7800E6C255;
-			remoteInfo = KKLua;
-		};
-		ACCDE4CB1DE9CF6300E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCDE4601DE9961900E6C255;
-			remoteInfo = KKLuaHttp;
-		};
-		ACCDE4D61DE9CF6E00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCDE4011DE957A700E6C255;
-			remoteInfo = KKViewLua;
-		};
-		ACCDE4DE1DE9CF9300E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCDE3CC1DE94BB000E6C255;
-			remoteInfo = KKObserverLua;
-		};
-		ACCDE4E01DE9CF9E00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE3CB1DE94BB000E6C255;
-			remoteInfo = KKObserverLua;
-		};
-		ACCDE4E21DE9CF9E00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE3351DE93E7800E6C255;
-			remoteInfo = KKLua;
-		};
-		ACCDE4E41DE9CF9E00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE4001DE957A700E6C255;
-			remoteInfo = KKViewLua;
-		};
-		ACCDE4E61DE9CF9E00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE45F1DE9961900E6C255;
-			remoteInfo = KKLuaHttp;
-		};
-		ACCDE4EE1DE9D17F00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACC3FDD81DB094E900832008;
-			remoteInfo = KKObserver;
-		};
-		ACCDE4F01DE9D18300E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC3FDD71DB094E900832008;
-			remoteInfo = KKObserver;
-		};
-		ACCDE4F61DE9D1F900E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ACCD87191DB4768900C2E792;
-			remoteInfo = KKView;
-		};
-		ACCDE4F81DE9D1FF00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCD87181DB4768900C2E792;
-			remoteInfo = KKView;
-		};
 		ACCDE5321DEAD85600E6C255 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ACCDE4AB1DE9CF3400E6C255 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ACCDE4B31DE9CF3400E6C255;
 			remoteInfo = KKApp;
-		};
-		ACCDE53B1DEAE00B00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACC3FDD71DB094E900832008;
-			remoteInfo = KKObserver;
-		};
-		ACCDE53E1DEAE03700E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCD87181DB4768900C2E792;
-			remoteInfo = KKView;
-		};
-		ACCDE5401DEAE03900E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE3CB1DE94BB000E6C255;
-			remoteInfo = KKObserverLua;
-		};
-		ACCDE5421DEAE03C00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE3351DE93E7800E6C255;
-			remoteInfo = KKLua;
-		};
-		ACCDE5441DEAE03F00E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE4001DE957A700E6C255;
-			remoteInfo = KKViewLua;
-		};
-		ACCDE5461DEAE04200E6C255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ACCDE45F1DE9961900E6C255;
-			remoteInfo = KKLuaHttp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -176,13 +50,7 @@
 		ACCDE4B41DE9CF3400E6C255 /* KKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCDE4B71DE9CF3400E6C255 /* KKApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKApp.h; sourceTree = "<group>"; };
 		ACCDE4B81DE9CF3400E6C255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKLua.xcodeproj; path = "../../kk-ios-lua/KKLua/KKLua.xcodeproj"; sourceTree = "<group>"; };
-		ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKLuaHttp.xcodeproj; path = "../../kk-ios-lua-http/KKLuaHttp/KKLuaHttp.xcodeproj"; sourceTree = "<group>"; };
-		ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKViewLua.xcodeproj; path = "../../kk-ios-view-lua/KKViewLua/KKViewLua.xcodeproj"; sourceTree = "<group>"; };
-		ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKObserverLua.xcodeproj; path = "../../kk-ios-obs-lua/KKObserverLua/KKObserverLua.xcodeproj"; sourceTree = "<group>"; };
 		ACCDE4E81DE9D13C00E6C255 /* KKApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKApplication.swift; sourceTree = "<group>"; };
-		ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKObserver.xcodeproj; path = "../../kk-ios-observer/KKObserver/KKObserver.xcodeproj"; sourceTree = "<group>"; };
-		ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKView.xcodeproj; path = "../../kk-ios-view/KKView/KKView.xcodeproj"; sourceTree = "<group>"; };
 		ACCDE5121DE9EAF500E6C255 /* KKApplication_Lua.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKApplication_Lua.swift; sourceTree = "<group>"; };
 		ACCDE5141DE9EE1F00E6C255 /* KKApplication_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKApplication_ViewController.swift; sourceTree = "<group>"; };
 		ACCDE51A1DEA6FD800E6C255 /* KKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +65,12 @@
 		ACCDE5591DEB120900E6C255 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
 		ACCDE55A1DEB120900E6C255 /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
 		ACCDE55D1DEB122D00E6C255 /* page */ = {isa = PBXFileReference; lastKnownFileType = folder; path = page; sourceTree = "<group>"; };
+		ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKCrypto.framework; path = ../../../../../../Library/Frameworks/KKCrypto.framework; sourceTree = "<group>"; };
+		ACEB48F01E7116C30029CF9A /* KKHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKHttp.framework; path = ../../../../../../Library/Frameworks/KKHttp.framework; sourceTree = "<group>"; };
+		ACEB48F11E7116C30029CF9A /* KKLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLua.framework; path = ../../../../../../Library/Frameworks/KKLua.framework; sourceTree = "<group>"; };
+		ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKLuaHttp.framework; path = ../../../../../../Library/Frameworks/KKLuaHttp.framework; sourceTree = "<group>"; };
+		ACEB48F31E7116C30029CF9A /* KKObserver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserver.framework; path = ../../../../../../Library/Frameworks/KKObserver.framework; sourceTree = "<group>"; };
+		ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KKObserverLua.framework; path = ../../../../../../Library/Frameworks/KKObserverLua.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +78,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEB48F51E7116C30029CF9A /* KKCrypto.framework in Frameworks */,
+				ACEB48F61E7116C30029CF9A /* KKHttp.framework in Frameworks */,
+				ACEB48F71E7116C30029CF9A /* KKLua.framework in Frameworks */,
+				ACEB48F81E7116C30029CF9A /* KKLuaHttp.framework in Frameworks */,
+				ACEB48F91E7116C30029CF9A /* KKObserver.framework in Frameworks */,
+				ACEB48FA1E7116C30029CF9A /* KKObserverLua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,12 +93,6 @@
 			files = (
 				AC69E29C1DED537200A795D4 /* KKHttp.framework in Frameworks */,
 				AC69E29A1DED537000A795D4 /* KKCrypto.framework in Frameworks */,
-				ACCDE5481DEAE04600E6C255 /* KKLua.framework in Frameworks */,
-				ACCDE5491DEAE04600E6C255 /* KKLuaHttp.framework in Frameworks */,
-				ACCDE54A1DEAE04600E6C255 /* KKObserverLua.framework in Frameworks */,
-				ACCDE54B1DEAE04700E6C255 /* KKView.framework in Frameworks */,
-				ACCDE54C1DEAE04700E6C255 /* KKViewLua.framework in Frameworks */,
-				ACCDE53D1DEAE01000E6C255 /* KKObserver.framework in Frameworks */,
 				ACCDE5341DEAD85A00E6C255 /* KKApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +103,12 @@
 		AC69E2981DED536F00A795D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACEB48EF1E7116C30029CF9A /* KKCrypto.framework */,
+				ACEB48F01E7116C30029CF9A /* KKHttp.framework */,
+				ACEB48F11E7116C30029CF9A /* KKLua.framework */,
+				ACEB48F21E7116C30029CF9A /* KKLuaHttp.framework */,
+				ACEB48F31E7116C30029CF9A /* KKObserver.framework */,
+				ACEB48F41E7116C30029CF9A /* KKObserverLua.framework */,
 				AC69E29B1DED537200A795D4 /* KKHttp.framework */,
 				AC69E2991DED537000A795D4 /* KKCrypto.framework */,
 			);
@@ -238,12 +118,6 @@
 		ACCDE4AA1DE9CF3400E6C255 = {
 			isa = PBXGroup;
 			children = (
-				ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */,
-				ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */,
-				ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */,
-				ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */,
-				ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */,
-				ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */,
 				ACCDE4B61DE9CF3400E6C255 /* KKApp */,
 				ACCDE5211DEAD84F00E6C255 /* KKApplication */,
 				ACCDE4B51DE9CF3400E6C255 /* Products */,
@@ -273,54 +147,6 @@
 				AC69E2AB1DED6A8900A795D4 /* KKAppViewController.swift */,
 			);
 			path = KKApp;
-			sourceTree = "<group>";
-		};
-		ACCDE4C01DE9CF5B00E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4C41DE9CF5B00E6C255 /* KKLua.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCDE4C61DE9CF6200E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4CC1DE9CF6300E6C255 /* KKLuaHttp.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCDE4D01DE9CF6E00E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4D71DE9CF6E00E6C255 /* KKViewLua.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCDE4D91DE9CF9300E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4DF1DE9CF9300E6C255 /* KKObserverLua.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCDE4EB1DE9D17F00E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4EF1DE9D17F00E6C255 /* KKObserver.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ACCDE4F31DE9D1F900E6C255 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ACCDE4F71DE9D1F900E6C255 /* KKView.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ACCDE5211DEAD84F00E6C255 /* KKApplication */ = {
@@ -365,12 +191,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ACCDE4F91DE9D1FF00E6C255 /* PBXTargetDependency */,
-				ACCDE4F11DE9D18300E6C255 /* PBXTargetDependency */,
-				ACCDE4E11DE9CF9E00E6C255 /* PBXTargetDependency */,
-				ACCDE4E31DE9CF9E00E6C255 /* PBXTargetDependency */,
-				ACCDE4E51DE9CF9E00E6C255 /* PBXTargetDependency */,
-				ACCDE4E71DE9CF9E00E6C255 /* PBXTargetDependency */,
 			);
 			name = KKApp;
 			productName = KKApp;
@@ -388,12 +208,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ACCDE5471DEAE04200E6C255 /* PBXTargetDependency */,
-				ACCDE5451DEAE03F00E6C255 /* PBXTargetDependency */,
-				ACCDE5431DEAE03C00E6C255 /* PBXTargetDependency */,
-				ACCDE5411DEAE03900E6C255 /* PBXTargetDependency */,
-				ACCDE53F1DEAE03700E6C255 /* PBXTargetDependency */,
-				ACCDE53C1DEAE00B00E6C255 /* PBXTargetDependency */,
 				ACCDE5331DEAD85600E6C255 /* PBXTargetDependency */,
 			);
 			name = KKApplication;
@@ -408,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = kkserver.cn;
 				TargetAttributes = {
 					ACCDE4B31DE9CF3400E6C255 = {
@@ -419,7 +233,7 @@
 					};
 					ACCDE51F1DEAD84F00E6C255 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BQQ2Y9B27K;
+						DevelopmentTeam = 8V7A9F9SCJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -435,32 +249,6 @@
 			mainGroup = ACCDE4AA1DE9CF3400E6C255;
 			productRefGroup = ACCDE4B51DE9CF3400E6C255 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ACCDE4C01DE9CF5B00E6C255 /* Products */;
-					ProjectRef = ACCDE4BF1DE9CF5B00E6C255 /* KKLua.xcodeproj */;
-				},
-				{
-					ProductGroup = ACCDE4C61DE9CF6200E6C255 /* Products */;
-					ProjectRef = ACCDE4C51DE9CF6200E6C255 /* KKLuaHttp.xcodeproj */;
-				},
-				{
-					ProductGroup = ACCDE4EB1DE9D17F00E6C255 /* Products */;
-					ProjectRef = ACCDE4EA1DE9D17F00E6C255 /* KKObserver.xcodeproj */;
-				},
-				{
-					ProductGroup = ACCDE4D91DE9CF9300E6C255 /* Products */;
-					ProjectRef = ACCDE4D81DE9CF9300E6C255 /* KKObserverLua.xcodeproj */;
-				},
-				{
-					ProductGroup = ACCDE4F31DE9D1F900E6C255 /* Products */;
-					ProjectRef = ACCDE4F21DE9D1F900E6C255 /* KKView.xcodeproj */;
-				},
-				{
-					ProductGroup = ACCDE4D01DE9CF6E00E6C255 /* Products */;
-					ProjectRef = ACCDE4CF1DE9CF6E00E6C255 /* KKViewLua.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ACCDE4B31DE9CF3400E6C255 /* KKApp */,
@@ -468,51 +256,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		ACCDE4C41DE9CF5B00E6C255 /* KKLua.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKLua.framework;
-			remoteRef = ACCDE4C31DE9CF5B00E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ACCDE4CC1DE9CF6300E6C255 /* KKLuaHttp.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKLuaHttp.framework;
-			remoteRef = ACCDE4CB1DE9CF6300E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ACCDE4D71DE9CF6E00E6C255 /* KKViewLua.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKViewLua.framework;
-			remoteRef = ACCDE4D61DE9CF6E00E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ACCDE4DF1DE9CF9300E6C255 /* KKObserverLua.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKObserverLua.framework;
-			remoteRef = ACCDE4DE1DE9CF9300E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ACCDE4EF1DE9D17F00E6C255 /* KKObserver.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKObserver.framework;
-			remoteRef = ACCDE4EE1DE9D17F00E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		ACCDE4F71DE9D1F900E6C255 /* KKView.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KKView.framework;
-			remoteRef = ACCDE4F61DE9D1F900E6C255 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ACCDE4B21DE9CF3400E6C255 /* Resources */ = {
@@ -563,70 +306,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ACCDE4E11DE9CF9E00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKObserverLua;
-			targetProxy = ACCDE4E01DE9CF9E00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE4E31DE9CF9E00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKLua;
-			targetProxy = ACCDE4E21DE9CF9E00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE4E51DE9CF9E00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKViewLua;
-			targetProxy = ACCDE4E41DE9CF9E00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE4E71DE9CF9E00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKLuaHttp;
-			targetProxy = ACCDE4E61DE9CF9E00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE4F11DE9D18300E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKObserver;
-			targetProxy = ACCDE4F01DE9D18300E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE4F91DE9D1FF00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKView;
-			targetProxy = ACCDE4F81DE9D1FF00E6C255 /* PBXContainerItemProxy */;
-		};
 		ACCDE5331DEAD85600E6C255 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ACCDE4B31DE9CF3400E6C255 /* KKApp */;
 			targetProxy = ACCDE5321DEAD85600E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE53C1DEAE00B00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKObserver;
-			targetProxy = ACCDE53B1DEAE00B00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE53F1DEAE03700E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKView;
-			targetProxy = ACCDE53E1DEAE03700E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE5411DEAE03900E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKObserverLua;
-			targetProxy = ACCDE5401DEAE03900E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE5431DEAE03C00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKLua;
-			targetProxy = ACCDE5421DEAE03C00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE5451DEAE03F00E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKViewLua;
-			targetProxy = ACCDE5441DEAE03F00E6C255 /* PBXContainerItemProxy */;
-		};
-		ACCDE5471DEAE04200E6C255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKLuaHttp;
-			targetProxy = ACCDE5461DEAE04200E6C255 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -660,6 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -713,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -751,6 +436,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = KKApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -773,6 +462,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = KKApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -788,7 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BQQ2Y9B27K;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				INFOPLIST_FILE = KKApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -803,7 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BQQ2Y9B27K;
+				DEVELOPMENT_TEAM = 8V7A9F9SCJ;
 				INFOPLIST_FILE = KKApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
