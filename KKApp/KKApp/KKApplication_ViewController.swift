@@ -73,6 +73,25 @@ extension UIViewController {
             
         }, self)
 
+        observer.on(["action","dismiss"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+            
+            if( weakObject != nil) {
+                
+                let v:UITabBarController = weakObject as! UITabBarController
+                let app = observer.app
+                
+                if app != nil {
+                    
+                    let animated = app!.booleanValue(["action","animated"],true)
+                    
+                    v.dismiss(animated: animated, completion: nil);
+                    
+                }
+                
+            }
+            
+        }, self)
+
         
     }
     
