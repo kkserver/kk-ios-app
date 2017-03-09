@@ -8,6 +8,7 @@
 
 import Foundation
 import KKView
+import KKObserver
 
 public extension KKApplication {
 
@@ -26,6 +27,31 @@ public extension KKApplication {
         if p != nil {
             v.rootViewController = p!.openViewController()
         }
+        
+        on(["action","present"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
+            
+            if(weakObject != nil) {
+                
+                var viewController = (weakObject as! UIWindow?)?.rootViewController
+                
+                while( viewController != nil && viewController?.presentedViewController != nil) {
+                    viewController = viewController?.presentedViewController
+                }
+                
+                if viewController != nil {
+                    
+                    let app = observer.app
+                    let (a,_) = app!.app(app!.stringValue(["action","present"],"")!)
+                    let animated = app!.booleanValue(["action","animated"],true)
+                    
+                    if(a != nil) {
+                        viewController?.present(a!.openViewController(), animated: animated, completion: nil)
+                    }
+                    
+                }
+            }
+            
+        }, v)
         
         return (v,document)
         
