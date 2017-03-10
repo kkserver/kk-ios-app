@@ -43,6 +43,7 @@ open class KKViewController: UIViewController {
         }
         
         if(app != nil && name != nil) {
+            document.bundle = app!.bundle
             document.loadXML(contentsOf: app!.bundle.url(forResource: name, withExtension: "xml")!)
             app!.set(["action","view"], true)
         }
