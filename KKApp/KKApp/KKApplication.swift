@@ -365,7 +365,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
             
             set(["recycle"],true)
             
-            if(booleanValue(["clone"], true)) {
+            if(booleanValue(["clone"], false)) {
                 
                 remove()
                 

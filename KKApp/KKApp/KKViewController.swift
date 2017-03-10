@@ -43,8 +43,17 @@ open class KKViewController: UIViewController {
         }
         
         if(app != nil && name != nil) {
+            
             document.bundle = app!.bundle
-            document.loadXML(contentsOf: app!.bundle.url(forResource: name, withExtension: "xml")!)
+            
+            let v = app!.bundle.url(forResource: name, withExtension: "xml")
+            
+            if v != nil {
+                document.loadXML(contentsOf: v!)
+            } else {
+                NSLog("[KK] not found view %@", name!)
+            }
+            
             app!.set(["action","view"], true)
         }
         

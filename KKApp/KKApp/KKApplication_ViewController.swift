@@ -77,7 +77,7 @@ extension UIViewController {
             
             if( weakObject != nil) {
                 
-                let v:UITabBarController = weakObject as! UITabBarController
+                let v:UIViewController = weakObject as! UIViewController
                 let app = observer.app
                 
                 if app != nil {
