@@ -27,6 +27,15 @@ open class KKViewController: UIViewController {
         get {
             if(_document == nil) {
                 _document = KKDocument.init(view: self.view)
+                _document!.on("", { (name:String, event:KKEvent, weakObject:AnyObject?) in
+                    if weakObject != nil {
+                        let v = weakObject as! KKViewController?
+                        if event is KKElementEvent {
+                            let e = event as! KKElementEvent
+                            v!.observer.set(name.components(separatedBy: "."), e.element.get(KKProperty.Data))
+                        }
+                    }
+                }, self)
             }
             return _document!
         }
@@ -59,5 +68,12 @@ open class KKViewController: UIViewController {
         
     }
     
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        document.layout(self.view.bounds.size)
+        if(document.get(KKProperty.Observer) == nil) {
+            document.set(KKProperty.Observer,self.observer)
+        }
+    }
     
 }
