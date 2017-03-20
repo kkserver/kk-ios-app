@@ -346,6 +346,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
                 return p!.obtain()
             }
             p = clone()
+            p!.set(["action"],nil)
             p!.set(["clone"],true)
             p!.afterTo(self)
             return p!
