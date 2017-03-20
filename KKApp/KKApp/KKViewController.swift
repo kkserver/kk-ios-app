@@ -32,7 +32,7 @@ open class KKViewController: UIViewController {
                         let v = weakObject as! KKViewController?
                         if event is KKElementEvent {
                             let e = event as! KKElementEvent
-                            v!.observer.set(name.components(separatedBy: "."), e.element.get(KKProperty.Data))
+                            v!.observer.set(["action"], ["name": name , "data" : e.element.get(KKProperty.Data)] )
                         }
                     }
                 }, self)
@@ -44,6 +44,7 @@ open class KKViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
+    
         let name = self.observer.stringValue(["app","kk-view"],nil)
         let app = self.app
         
@@ -59,6 +60,7 @@ open class KKViewController: UIViewController {
             
             if v != nil {
                 document.loadXML(contentsOf: v!)
+                KKScriptElement.runScriptElement(document, app!)
             } else {
                 NSLog("[KK] not found view %@", name!)
             }
@@ -73,6 +75,43 @@ open class KKViewController: UIViewController {
         document.layout(self.view.bounds.size)
         if(document.get(KKProperty.Observer) == nil) {
             document.set(KKProperty.Observer,self.observer)
+        }
+    }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        
+        let app = self.app
+        
+        if(app != nil) {
+            
+            if(self.navigationController != nil) {
+                
+                let hidden = self.navigationController!.isNavigationBarHidden
+                app!.set(["topbar","hidden"], hidden);
+                
+                if(app!.booleanValue(["app","topbar"], true) != !hidden) {
+                    self.navigationController?.setNavigationBarHidden(!hidden, animated: false)
+                }
+            }
+        }
+    }
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated);
+        
+        let app = self.app
+        
+        if(app != nil) {
+            
+            if(self.navigationController != nil) {
+                
+                let hidden = self.navigationController!.isNavigationBarHidden
+                
+                if(self.navigationController!.isNavigationBarHidden != hidden) {
+                    self.navigationController?.setNavigationBarHidden(hidden, animated: false)
+                }
+            }
         }
     }
     

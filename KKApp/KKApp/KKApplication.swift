@@ -338,10 +338,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
         print(validationError)
     }
     
-    public func open(_ name:String,_ animated:Bool) ->Void {
-        set(["action"],["open":name,"animated":animated])
-    }
-    
+
     public func obtain() -> KKApplication {
         if booleanValue(["obtain"],false) {
             var p = nextSibling
@@ -364,6 +361,8 @@ public class KKApplication: KKObserver,XMLParserDelegate {
             set(["obtain"],false)
             
             set(["recycle"],true)
+            
+            set(["action"],nil)
             
             if(booleanValue(["clone"], false)) {
                 

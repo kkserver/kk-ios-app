@@ -47,6 +47,22 @@ extension UIViewController {
         }
     }
     
+    internal func onAction(app:KKApplication) -> Bool {
+        
+        let name = app.stringValue(["action","name"],"")
+        
+        if name == "dismiss" {
+            
+            let animated = app.booleanValue(["action","animated"],true)
+            
+            self.dismiss(animated: animated, completion: nil)
+            
+            return true
+        }
+        
+        return false
+    }
+    
     internal func didObserver(observer:KKWithObserver) -> Void {
         
         observer.on(["app","title"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
@@ -72,25 +88,31 @@ extension UIViewController {
             }
             
         }, self)
-
-        observer.on(["action","dismiss"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+        
+        observer.on(["app","bottombar"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
             
-            if( weakObject != nil) {
+            if(weakObject != nil) {
+                (weakObject as! UIViewController?)!.hidesBottomBarWhenPushed = !observer.booleanValue(["app","bottombar"],true);
+            }
+            
+        }, self)
+
+        observer.on(["action"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+            
+            let v:UIViewController = weakObject as! UIViewController
+            let app = observer.app
+            
+            if app != nil {
                 
-                let v:UIViewController = weakObject as! UIViewController
-                let app = observer.app
-                
-                if app != nil {
-                    
-                    let animated = app!.booleanValue(["action","animated"],true)
-                    
-                    v.dismiss(animated: animated, completion: nil);
-                    
+                if !v.onAction(app: app!) {
+                    if app!.parent != nil {
+                        app!.parent!.set(["action"], observer.get(["action"]))
+                    }
                 }
                 
             }
             
-        }, self)
+        }, self,true)
 
         
     }
@@ -126,33 +148,23 @@ extension UITabBarController {
         
     }
     
-    internal override func didObserver(observer:KKWithObserver) -> Void {
-        super.didObserver(observer: observer)
+    internal override func onAction(app:KKApplication) -> Bool {
         
-        observer.on(["action","open"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+        let name = app.stringValue(["action","name"],"")
+        
+        if name == "open" {
             
-            if( weakObject != nil) {
-                
-                let v:UITabBarController = weakObject as! UITabBarController
-                let app = observer.app
-                
-                if app != nil {
-                    
-                    let (a,index) = app!.app(app!.stringValue(["action","open"],"")!)
-                    
-                    if(a != nil) {
-                        v.selectedIndex = index
-                    }
-                    
-                }
-                
+            let (a,index) = app.app(app.stringValue(["action","open"],"")!)
+            
+            if(a != nil) {
+                self.selectedIndex = index
             }
             
-            }, self)
+            return true
+        }
         
-        
+        return super.onAction(app: app)
     }
-
     
 }
 
@@ -169,33 +181,44 @@ extension UINavigationController {
         
     }
     
-    internal override func didObserver(observer:KKWithObserver) -> Void {
-        super.didObserver(observer: observer)
+    internal override func onAction(app:KKApplication) -> Bool {
         
-        observer.on(["action","open"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+        let name = app.stringValue(["action","name"],nil)
+        
+        if name == "open" {
             
-            if( weakObject != nil) {
-                
-                let v:UINavigationController = weakObject as! UINavigationController
-                let app = observer.app
-                
-                if app != nil {
-                    
-                    let (a,_) = app!.app(app!.stringValue(["action","open"],"")!)
-                    let animated = app!.booleanValue(["action","animated"],true)
-                    
-                    if(a != nil) {
-                        v.pushViewController(a!.openViewController(), animated: animated)
+            let (a,_) = app.app(app.stringValue(["action","open"],"")!)
+            let animated = app.booleanValue(["action","animated"],true)
+            
+            if(a != nil) {
+                self.pushViewController(a!.openViewController(), animated: animated)
+            }
+            
+            return true
+            
+        } else if name == "pop" {
+            
+            var names = app.stringValue(["action","pop"],"..")!.components(separatedBy: "/")
+            let animated = app.booleanValue(["action","animated"],true)
+            
+            for i in 0..<names.count  {
+                if i + 1 == names.count {
+                    if names[i] == ".." {
+                        self.popViewController(animated: animated)
                     }
-                    
+                } else {
+                    if names[i] == ".." {
+                        self.popViewController(animated: false)
+                    }
                 }
             }
             
-            }, self)
+            return true
+            
+        }
         
-        
+        return super.onAction(app: app)
     }
-
     
 }
 
