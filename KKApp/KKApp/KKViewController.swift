@@ -43,7 +43,6 @@ open class KKViewController: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        
     
         let name = self.observer.stringValue(["app","kk-view"],nil)
         let app = self.app
@@ -72,9 +71,11 @@ open class KKViewController: UIViewController {
     
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        document.layout(self.view.bounds.size)
-        if(document.get(KKProperty.Observer) == nil) {
-            document.set(KKProperty.Observer,self.observer)
+        if _document != nil {
+            document.layout(self.view.bounds.size)
+            if(document.get(KKProperty.Observer) == nil) {
+                document.set(KKProperty.Observer,self.observer)
+            }
         }
     }
     
@@ -106,7 +107,7 @@ open class KKViewController: UIViewController {
             
             if(self.navigationController != nil) {
                 
-                let hidden = self.navigationController!.isNavigationBarHidden
+                let hidden = app!.booleanValue(["topbar","hidden"], false)
                 
                 if(self.navigationController!.isNavigationBarHidden != hidden) {
                     self.navigationController?.setNavigationBarHidden(hidden, animated: false)

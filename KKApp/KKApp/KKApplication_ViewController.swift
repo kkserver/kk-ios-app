@@ -99,17 +99,20 @@ extension UIViewController {
 
         observer.on(["action"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
             
-            let v:UIViewController = weakObject as! UIViewController
-            let app = observer.app
-            
-            if app != nil {
+            if(weakObject != nil) {
                 
-                if !v.onAction(app: app!) {
-                    if app!.parent != nil {
-                        app!.parent!.set(["action"], observer.get(["action"]))
+                let v:UIViewController = weakObject as! UIViewController
+                let app = observer.app
+                
+                if app != nil && observer.get(["action","name"]) != nil{
+                    
+                    if !v.onAction(app: app!) {
+                        if app!.parent != nil {
+                            app!.parent!.set(["action"], observer.get(["action"]))
+                        }
                     }
+                    
                 }
-                
             }
             
         }, self,true)
