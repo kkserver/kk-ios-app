@@ -104,7 +104,9 @@ extension UIViewController {
                 let v:UIViewController = weakObject as! UIViewController
                 let app = observer.app
                 
-                if app != nil && observer.get(["action","name"]) != nil{
+                if app != nil
+                    && observer.get(["action","name"]) != nil
+                    && v.isViewLoaded && v.view.window != nil{
                     
                     if !v.onAction(app: app!) {
                         if app!.parent != nil {
