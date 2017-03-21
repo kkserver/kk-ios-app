@@ -28,9 +28,11 @@ public extension KKApplication {
             v.rootViewController = p!.openViewController()
         }
         
-        on(["action","present"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
+        on(["action"], { (observer:KKObserver, changedKey:[String], weakObject:AnyObject?) in
             
-            if(weakObject != nil) {
+            let name = observer.stringValue(["action","name"], "")
+
+            if(weakObject != nil && name == "present") {
                 
                 var viewController = (weakObject as! UIWindow?)?.rootViewController
                 
