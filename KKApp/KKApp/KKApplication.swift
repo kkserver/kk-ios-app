@@ -363,6 +363,7 @@ public class KKApplication: KKObserver,XMLParserDelegate {
     }
     
     public func recycle() -> Void {
+        print("[KK]","[App]", name!, "recycle")
         remove()
     }
     
