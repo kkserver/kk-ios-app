@@ -125,7 +125,7 @@ extension UIViewController {
     public func obtainApplication(_ app:KKApplication) {
         let v = self.app
         if v != app {
-            self.observer.obtain(app.obtain(), [])
+            self.observer.obtain(app, [])
             if v != nil {
                 v!.recycle()
             }
@@ -145,7 +145,7 @@ extension UITabBarController {
         
         while(p != nil) {
             let n = p!.nextSibling
-            viewControllers.append(p!.openViewController())
+            viewControllers.append(p!.obtain().openViewController())
             p = n
         }
         
@@ -159,10 +159,13 @@ extension UITabBarController {
         
         if name == "open" {
             
-            let (a,index) = app.app(app.stringValue(["action","open"],"")!)
+            let open = app.stringValue(["action","open"],"")
             
-            if(a != nil) {
-                self.selectedIndex = index
+            for viewController in self.viewControllers! {
+                if viewController.app?.name == open {
+                    self.selectedViewController = viewController
+                    break
+                }
             }
             
             return true
@@ -192,7 +195,7 @@ extension UINavigationController {
         
         if name == "open" {
             
-            let (a,_) = app.app(app.stringValue(["action","open"],"")!)
+            let a = app.open(app.stringValue(["action","open"],"")!)
             let animated = app.booleanValue(["action","animated"],true)
             
             if(a != nil) {

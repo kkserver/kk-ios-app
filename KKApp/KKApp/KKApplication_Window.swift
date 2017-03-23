@@ -46,7 +46,7 @@ public extension KKApplication {
                     
                     if app != nil {
                         
-                        let (a,_) = app!.app(app!.stringValue(["action","present"],"")!)
+                        let a = app!.open(app!.stringValue(["action","present"],"")!)
                         let animated = app!.booleanValue(["action","animated"],true)
                         
                         if(a != nil) {

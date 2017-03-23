@@ -42,6 +42,10 @@ public class KKApplication: KKObserver,XMLParserDelegate {
     private weak var _prevSibling:KKApplication?
     private let _bundle:Bundle
     
+    deinit {
+        print("[KK]","[App]", name!, "dealloc")
+    }
+    
     public override var parent:KKObserver? {
         get {
             return _parent;
@@ -338,56 +342,28 @@ public class KKApplication: KKObserver,XMLParserDelegate {
         print(validationError)
     }
     
-
     public func obtain() -> KKApplication {
-        if booleanValue(["obtain"],false) {
-            var p = nextSibling
-            if p != nil && name == p!.name {
-                return p!.obtain()
-            }
-            p = clone()
-            p!.set(["action"],nil)
-            p!.set(["clone"],true)
-            p!.afterTo(self)
-            return p!
-        }
-        set(["obtain"],true)
-        return self
+        let v = self.clone()
+        v.afterTo(self)
+        return v
     }
-    
-    public func recycle() -> Void {
+
+    public func open(_ name:String) -> KKApplication? {
         
-        if booleanValue(["obtain"],false) {
-            
-            set(["obtain"],false)
-            
-            set(["recycle"],true)
-            
-            set(["action"],nil)
-            
-            if(booleanValue(["clone"], false)) {
-                
-                remove()
-                
-            }
-        }
-        
-    }
-    
-    public func app(_ name:String) -> (KKApplication?,Int) {
-        
-        var index:Int = 0
         var p = firstChild
         
-        while(p != nil) {
-            if(p!.name == name) {
-                return (p,index)
+        while p != nil {
+            if p!.name == name {
+                return p!.obtain()
             }
-            index = index + 1
             p = p!.nextSibling
         }
         
-        return (nil,0)
+        return nil
+    }
+    
+    public func recycle() -> Void {
+        remove()
     }
     
     private static var _main:KKApplication?
