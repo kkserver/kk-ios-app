@@ -15,6 +15,11 @@ open class KKViewController: UIViewController {
     
     private var _document:KKDocument?
     
+    deinit {
+        
+        self.app?.recycle()
+        
+    }
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -64,7 +69,7 @@ open class KKViewController: UIViewController {
                 NSLog("[KK] not found view %@", name!)
             }
             
-            app!.set(["action","view"], true)
+            app!.set(["view","load"], true)
         }
         
     }
@@ -85,7 +90,7 @@ open class KKViewController: UIViewController {
         let app = self.app
         
         if(app != nil) {
-            
+
             if(self.navigationController != nil) {
                 
                 let hidden = self.navigationController!.isNavigationBarHidden
@@ -97,6 +102,19 @@ open class KKViewController: UIViewController {
             }
         }
     }
+    
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+        
+        let app = self.app
+        
+        if(app != nil) {
+            
+            app!.set(["view","visible"], true)
+            
+        }
+    }
+
     
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated);

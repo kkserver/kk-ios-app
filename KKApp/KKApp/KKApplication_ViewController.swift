@@ -51,7 +51,7 @@ extension UIViewController {
         
         let name = app.stringValue(["action","name"],"")
         
-        if name == "dismiss" {
+        if name == "dismiss" && self.presentingViewController != nil {
             
             let animated = app.booleanValue(["action","animated"],true)
             

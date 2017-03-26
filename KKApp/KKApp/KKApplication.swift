@@ -46,6 +46,15 @@ public class KKApplication: KKObserver,XMLParserDelegate {
         print("[KK]","[App]", name!, "dealloc")
     }
     
+    public var root:KKApplication {
+        get {
+            if _parent != nil {
+                return _parent!.root
+            }
+            return self
+        }
+    }
+    
     public override var parent:KKObserver? {
         get {
             return _parent;
@@ -363,8 +372,11 @@ public class KKApplication: KKObserver,XMLParserDelegate {
     }
     
     public func recycle() -> Void {
-        print("[KK]","[App]", name!, "recycle")
-        remove()
+        if !booleanValue(["recycle"],false) {
+            set(["recycle"],true)
+            print("[KK]","[App]", name!, "recycle")
+            remove()
+        }
     }
     
     private static var _main:KKApplication?

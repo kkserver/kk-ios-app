@@ -10,6 +10,7 @@ import KKLua
 import KKView
 import KKViewLua
 import KKLuaHttp
+import KKObserver
 
 extension KKApplication : KKScriptContext {
     
@@ -18,8 +19,8 @@ extension KKApplication : KKScriptContext {
         get {
             
             var v:KKLuaState? = get(["luaState"]) as! KKLuaState?
-        
-            if parent != nil {
+            
+            if v == nil && parent != nil {
                 v = (parent as! KKApplication).luaState
             }
             
@@ -75,7 +76,18 @@ extension KKApplication : KKScriptContext {
         let name:String? = stringValue(["app","lua-main"],nil)
         
         if name != nil {
-            luaState.callFile(bundle.path(uri: name!), objects: objects)
+            let L = luaState
+            L.callFile(bundle.path(uri: name!), objects: objects)
+            on(["recycle"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+                
+                if weakObject != nil {
+                    let L = weakObject as! KKLuaState
+                    DispatchQueue.main.async {
+                        L.gc()
+                    }
+                }
+                
+            }, L)
         }
         
     }
