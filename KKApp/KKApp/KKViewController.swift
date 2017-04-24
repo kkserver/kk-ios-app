@@ -70,6 +70,19 @@ open class KKViewController: UIViewController {
             }
             
             app!.set(["view","load"], true)
+            
+            self.observer.on(["view","layout"], { (observer:KKObserver, changedKeys:[String], weakObject:AnyObject?) in
+                
+                if weakObject != nil {
+                    let v = weakObject as! KKViewController?
+                    
+                    if(v!.isViewLoaded) {
+                        v!.document.layout(v!.view.bounds.size)
+                    }
+                    
+                }
+                
+            }, self)
         }
         
     }
