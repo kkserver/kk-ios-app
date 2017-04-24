@@ -199,6 +199,15 @@ extension UINavigationController {
             let animated = app.booleanValue(["action","animated"],true)
             
             if(a != nil) {
+                
+                var names = app.stringValue(["action","pop"],"")!.components(separatedBy: "/")
+                
+                for i in 0..<names.count  {
+                    if names[i] == ".." {
+                        self.popViewController(animated: false)
+                    }
+                }
+                
                 self.pushViewController(a!.openViewController(), animated: animated)
             }
             
